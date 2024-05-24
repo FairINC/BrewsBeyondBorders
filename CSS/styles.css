@@ -16,6 +16,13 @@ section {
   align-items: center;
 }
 
+#landing {
+  background: url('../images/BBB Background.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 footer {
   position: relative;
   bottom: 0;
