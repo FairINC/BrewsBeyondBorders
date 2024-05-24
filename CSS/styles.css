@@ -1,5 +1,29 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+
+body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
