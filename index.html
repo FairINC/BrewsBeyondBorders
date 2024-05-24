@@ -3,36 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TS9SN4RL8B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-TS9SN4RL8B');
-</script>
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
   <title>Brews Beyond Borders</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="CSS/styles.css">
   <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="images/mstile-150x150.png">
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-  <header class="bg-dark text-white py-3">
-    <nav class="container">
-      <ul class="nav justify-content-center">
+  <header class="bg-dark text-white py-3 fixed-top">
+    <nav class="container d-flex justify-content-between align-items-center">
+      <a href="#"><img src="images/logo.png" alt="Brews Beyond Borders" style="height: 50px;"></a>
+      <ul class="nav">
         <li class="nav-item"><a class="nav-link text-white" href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#donation">Donation</a></li>
         <li class="nav-item"><a class="nav-link text-white" href="#newsletter">Newsletter</a></li>
@@ -41,34 +25,40 @@
     </nav>
   </header>
 
+  <section id="landing" class="bg-dark text-white d-flex align-items-center justify-content-center" style="height: 100vh;">
+    <div class="text-center">
+      <h1 class="display-3">Brews Beyond Borders</h1>
+      <p class="lead">Empowering Entrepreneurs in Emerging Markets</p>
+    </div>
+  </section>
+
   <section id="about" class="bg-light py-5">
     <div class="container text-center">
-      <h1 class="display-4">About Us</h1>
-      <p class="lead">Welcome to Brews Beyond Borders!We aim to empower entrepreneurs in emerging markets start breweries!</p>
+      <h1>About Us</h1>
+      <p>Welcome to Brews Beyond Borders! We aim to empower entrepreneurs in emerging markets to start breweries!</p>
       <p><strong>Mission Statement:</strong> To empower local economies through sustainable entrepreneurship by establishing community-centered breweries. Our nonprofit will foster agricultural development by sourcing and roasting local supplies, enhance cultural understanding through exchange programs, and promote ecotourism by integrating American brewing expertise with local traditions and values.</p>
       <p><strong>Primary Service:</strong> Educational Services and Community Development</p>
       <p><strong>Principal Office Address:</strong> 6057 Routt RD, Hartsel, CO 80449</p>
-    
-     </div>
+    </div>
   </section>
 
   <section id="donation" class="bg-secondary text-white py-5">
     <div class="container text-center">
-      <h1 class="display-4">Donate</h1>
-      <p class="lead">Your donations help us continue our mission of sharing global brews. Thank you for your support!</p>
+      <h1>Donate</h1>
+      <p>Your donations help us continue our mission of sharing global brews. Thank you for your support!</p>
     </div>
   </section>
 
   <section id="newsletter" class="bg-light py-5">
     <div class="container text-center">
-      <h1 class="display-4">Newsletter</h1>
-      <p class="lead">Sign up for our newsletter to stay updated on our latest offerings and events.</p>
+      <h1>Newsletter</h1>
+      <p>Sign up for our newsletter to stay updated on our latest offerings and events.</p>
     </div>
   </section>
 
   <section id="courses" class="bg-info text-white py-5">
     <div class="container text-center">
-      <h1 class="display-4">Courses</h1>
+      <h1>Courses</h1>
       <ul class="list-unstyled">
         <li><strong>Legal Filing in the Brewing Industry:</strong> A detailed overview of the regulatory and legal framework critical to establishing and operating a brewery.</li>
         <li><strong>Design and Construction of Brewery Hardware:</strong> A comprehensive study of the technical aspects of brewery equipment and infrastructure.</li>
