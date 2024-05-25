@@ -12,6 +12,7 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Change the alpha value to make it darker */
+  z-index: -1; /* Place the fog behind other content */
 }
 
 .btn-dark-forest {
