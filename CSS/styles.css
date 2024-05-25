@@ -11,7 +11,7 @@
   left: 0;
   padding-bottom: 330px;
   background-color: #E8BA9B;
-  background-image: url(''images/newsletter.jpg'');
+  background-image: url('images/newsletter.jpg');
   background-size: cover;
   animation: scrollBg 35s linear forwards;
 }
