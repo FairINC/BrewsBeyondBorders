@@ -9,12 +9,14 @@
   position: absolute;
   top: 0;
   left: 0;
-  padding-bottom: 330px;
+  padding-bottom: 330px; /* Adjust as needed */
   background-color: #E8BA9B;
   background-image: url('images/newsletter.jpg'); /* Update the URL here */
   background-size: cover;
   animation: scrollBg 35s linear forwards;
+  z-index: -1; /* Ensure the background is behind other content */
 }
+
 
 @keyframes scrollBg {
   from {
