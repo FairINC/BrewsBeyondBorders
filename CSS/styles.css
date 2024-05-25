@@ -11,7 +11,7 @@
   left: 0;
   padding-bottom: 330px;
   background-color: #E8BA9B;
-  background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');
+  background-image: url(''images/newsletter.jpg'');
   background-size: cover;
   animation: scrollBg 35s linear forwards;
 }
