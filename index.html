@@ -62,29 +62,28 @@
         <label for="email">Your email:</label>
         <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
       </div>
-      <div class="form-group">
-        <label for="donation-amount">Select donation amount:</label>
-        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$1" required> $1
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$5"> $5
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$10"> $10
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$20"> $20
-          </label>
-          <label class="btn btn-outline-light">
-          <input type="radio" name="donation" value="Other" data-toggle="collapse" data-target="#otherAmountInput"> Other: $
-          <input type="number" name="otherAmount" id="otherAmountInput" min="1" class="form-control d-inline-block collapse" style="width: 100px;">
-          </label>
+     <div class="form-group">
+  <label for="donation-amount">Select donation amount:</label>
+  <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+    <label class="btn btn-outline-light">
+      <input type="radio" name="donation" value="$1" required> $1
+    </label>
+    <label class="btn btn-outline-light">
+      <input type="radio" name="donation" value="$5"> $5
+    </label>
+    <label class="btn btn-outline-light">
+      <input type="radio" name="donation" value="$10"> $10
+    </label>
+    <label class="btn btn-outline-light">
+      <input type="radio" name="donation" value="$20"> $20
+    </label>
+    <label class="btn btn-outline-light">
+      <input type="radio" name="donation" value="Other"> Other: $
+      <input type="number" name="otherAmount" id="otherAmountInput" min="1" class="form-control d-inline-block collapse" style="width: 100px;">
+    </label>
+  </div>
+</div>
 
-
-        </div>
-      </div>
     <button type="submit" class="btn btn-dark-forest mt-3">Process Donation</button>
     </form>
     <p id="form-response" class="mt-3"></p>
