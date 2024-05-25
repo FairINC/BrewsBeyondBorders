@@ -2,11 +2,7 @@
   position: relative;
 }
 
-#landing {
-  position: relative;
-}
-
-#landing::after {
+#landing::before {
   content: "";
   position: absolute;
   top: 0;
@@ -14,13 +10,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black fog */
-  z-index: 1; /* Place the fog above the image */
+  z-index: -1; /* Place the fog behind the image */
 }
 
-.text-center {
-  position: relative; /* Ensure the text is positioned relative to its container */
-  z-index: 2; /* Place the text above the fog */
-}
+
 
 .btn-dark-forest {
   background-color: #2ecc71; /* Green */
