@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const form = document.getElementById('newsletter-form');
+  const form = document.getElementById('donation-form');
   const responseContainer = document.getElementById('form-response');
 
   form.addEventListener('submit', async function (event) {
@@ -7,10 +7,18 @@ document.addEventListener('DOMContentLoaded', function () {
     responseContainer.textContent = '';
 
     const email = form.email.value;
-    if (!validateEmail(email)) {
-      responseContainer.textContent = 'Please enter a valid email address.';
-      responseContainer.classList.add('text-danger');
-      return;
+    const donationRadio = form.donation.value;
+    let donationAmount = donationRadio;
+
+    if (donationRadio === 'Other') {
+      const otherAmount = form.otherAmount.value;
+      if (otherAmount && parseFloat(otherAmount) > 0) {
+        donationAmount = `$${otherAmount}`;
+      } else {
+        responseContainer.textContent = 'Please enter a valid donation amount.';
+        responseContainer.classList.add('text-danger');
+        return;
+      }
     }
 
     try {
@@ -20,12 +28,15 @@ document.addEventListener('DOMContentLoaded', function () {
           'Accept': 'application/json',
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email: email })
+        body: JSON.stringify({
+          email: email,
+          donation: donationAmount
+        })
       });
 
       if (response.ok) {
         form.reset();
-        responseContainer.textContent = 'Thank you for signing up for our newsletter! We currently do not have this feature operational but we will add you to our first lists as soon as we have an emailer being sent out. Again, thank you!';
+        responseContainer.textContent = 'Thank you for your pledge! We will contact you once we are ready to process your donation.';
         responseContainer.classList.remove('text-danger');
         responseContainer.classList.add('text-success');
       } else {
@@ -37,9 +48,4 @@ document.addEventListener('DOMContentLoaded', function () {
       responseContainer.classList.add('text-danger');
     }
   });
-
-  function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(String(email).toLowerCase());
-  }
 });
