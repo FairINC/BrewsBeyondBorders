@@ -1,33 +1,4 @@
-.newsletter-section {
-  position: relative;
-  overflow: hidden; /* Ensure the animation stays within the bounds of the section */
-}
 
-.scroll-bg {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-bottom: 330px; /* Adjust as needed */
-  background-color: #E8BA9B;
-  background-image: url('images/newsletter.jpg'); /* Update the URL here */
-  background-size: cover;
-  background-position: center;
-  animation: scrollBg 35s linear forwards;
-  z-index: -1; /* Ensure the background is behind other content */
-}
-
-
-
-@keyframes scrollBg {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-330px);
-  }
-}
 
 #landing {
   position: relative;
