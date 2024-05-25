@@ -1,3 +1,13 @@
+.btn-dark-forest {
+  background-color: #254117;
+  border-color: #254117;
+}
+
+.btn-dark-forest:hover {
+  background-color: #1e3615;
+  border-color: #1e3615;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
