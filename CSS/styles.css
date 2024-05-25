@@ -1,11 +1,12 @@
 .btn-dark-forest {
-  background-color: #254117;
-  border-color: #254117;
+  background-color: #2ecc71; /* Green */
+  border-color: #27ae60; /* Darker Green */
+  color: #fff; /* White text */
 }
 
 .btn-dark-forest:hover {
-  background-color: #1e3615;
-  border-color: #1e3615;
+  background-color: #27ae60; /* Darker Green on hover */
+  border-color: #27ae60; /* Darker Green on hover */
 }
 
 body {
