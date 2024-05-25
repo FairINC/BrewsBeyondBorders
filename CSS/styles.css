@@ -1,3 +1,30 @@
+.newsletter-section {
+  position: relative;
+  overflow: hidden; /* Ensure the animation stays within the bounds of the section */
+}
+
+.scroll-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 330px;
+  background-color: #E8BA9B;
+  background-image: url('https://andreivictor.ro/codepen/scroll-bg-animation-pinterest/bg_pasta_grid-3f880df3.jpg');
+  background-size: cover;
+  animation: scrollBg 35s linear forwards;
+}
+
+@keyframes scrollBg {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-330px);
+  }
+}
+
 #landing {
   position: relative;
 }
