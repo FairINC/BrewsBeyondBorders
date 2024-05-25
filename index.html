@@ -45,7 +45,7 @@
     </div>
   </section>
 
-  <section id="donation" class="bg-secondary text-white py-5">
+<section id="donation" class="bg-secondary text-white py-5">
   <div class="container text-center">
     <h1>Donate</h1>
     <p>Your donations help us continue our mission of sharing global brews. Thank you for your support!</p>
@@ -57,37 +57,31 @@
       </div>
       <div class="form-group">
         <label for="donation-amount">Select donation amount:</label>
-        <div id="donation-amount">
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="donation" id="donation1" value="$1" required>
-            <label class="form-check-label" for="donation1">$1</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="donation" id="donation5" value="$5">
-            <label class="form-check-label" for="donation5">$5</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="donation" id="donation10" value="$10">
-            <label class="form-check-label" for="donation10">$10</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="donation" id="donation20" value="$20">
-            <label class="form-check-label" for="donation20">$20</label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="radio" name="donation" id="donationOther" value="Other">
-            <label class="form-check-label" for="donationOther">
-              Other: $
-              <input type="number" name="otherAmount" id="otherAmount" min="1" class="form-control d-inline-block" style="width: 100px;">
-            </label>
-          </div>
+        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+          <label class="btn btn-outline-light">
+            <input type="radio" name="donation" value="$1" required> $1
+          </label>
+          <label class="btn btn-outline-light">
+            <input type="radio" name="donation" value="$5"> $5
+          </label>
+          <label class="btn btn-outline-light">
+            <input type="radio" name="donation" value="$10"> $10
+          </label>
+          <label class="btn btn-outline-light">
+            <input type="radio" name="donation" value="$20"> $20
+          </label>
+          <label class="btn btn-outline-light">
+            <input type="radio" name="donation" value="Other"> Other: $
+            <input type="number" name="otherAmount" id="otherAmount" min="1" class="form-control d-inline-block" style="width: 100px;">
+          </label>
         </div>
       </div>
-      <button type="submit" class="btn btn-primary">Process Donation</button>
+      <button type="submit" class="btn btn-primary mt-3">Process Donation</button>
     </form>
     <p id="form-response" class="mt-3"></p>
   </div>
 </section>
+
 
 
   <section id="newsletter" class="bg-light py-5">
