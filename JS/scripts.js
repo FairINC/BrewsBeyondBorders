@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('donation-form');
   const responseContainer = document.getElementById('form-response');
+  const otherAmountInput = document.getElementById('otherAmountInput');
 
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
@@ -11,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let donationAmount = donationRadio;
 
     if (donationRadio === 'Other') {
-      const otherAmount = form.otherAmount.value;
+      const otherAmount = otherAmountInput.value;
       if (otherAmount && parseFloat(otherAmount) > 0) {
         donationAmount = `$${otherAmount}`;
       } else {
