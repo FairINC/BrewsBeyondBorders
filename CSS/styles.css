@@ -13,9 +13,11 @@
   background-color: #E8BA9B;
   background-image: url('images/newsletter.jpg'); /* Update the URL here */
   background-size: cover;
+  background-position: center;
   animation: scrollBg 35s linear forwards;
   z-index: -1; /* Ensure the background is behind other content */
 }
+
 
 
 @keyframes scrollBg {
