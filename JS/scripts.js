@@ -49,4 +49,14 @@ document.addEventListener('DOMContentLoaded', function () {
       responseContainer.classList.add('text-danger');
     }
   });
+
+  // Toggle input field visibility for "Other" option
+  const otherDonationInput = document.querySelector('input[name="donation"][value="Other"]');
+  otherDonationInput.addEventListener('change', function () {
+    if (this.checked) {
+      otherAmountInput.classList.add('show');
+    } else {
+      otherAmountInput.classList.remove('show');
+    }
+  });
 });
