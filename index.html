@@ -11,12 +11,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="shortcut icon" href="images/favicon.ico">
   <meta name="theme-color" content="#ffffff">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .logo-text {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    #courses {
+      position: relative;
+      overflow: hidden;
+    }
+    #courses canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  </style>
 </head>
 <body>
   <header class="bg-dark text-white py-3 fixed-top">
     <nav class="container d-flex justify-content-between align-items-center">
       <div class="d-flex align-items-center">
-        <a href="#"><img src="images/Logo.png" alt="Brews Beyond Borders" style="height: 50px;"></a>
+        <a href="#"><img src="images/logo.png" alt="Brews Beyond Borders" style="height: 50px;"></a>
         <span class="ml-2 logo-text">Brews Beyond Borders</span>
       </div>
       <ul class="nav">
@@ -28,7 +46,7 @@
     </nav>
   </header>
 
-  <section id="landing" class="d-flex align-items-center justify-content-center" style="height: 100vh;">
+  <section id="landing" class="d-flex align-items-center justify-content-center" style="height: 100vh; background: url('images/BBB Background.jpg') no-repeat center center/cover;">
     <div class="text-center text-white">
       <h1 class="display-3">Brews Beyond Borders</h1>
       <p class="lead">Empowering Entrepreneurs in Emerging Markets</p>
@@ -45,87 +63,186 @@
     </div>
   </section>
 
-<section id="donation" class="bg-secondary text-white py-5">
-  <div class="container text-center">
-    <h1>Donate</h1>
-    <p>Your donations help us continue our mission of sharing global brews. Thank you for your support!</p>
-    <p>We are waiting for our 501(c)(3) status before fully accepting financial aid. Please fill out the form below, and we will reach out once we are ready to process your donation.</p>
-    <form id="donation-form" action="https://formspree.io/f/myyranpg" method="POST">
-      <div class="form-group">
-        <label for="email">Your email:</label>
-        <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
-      </div>
-      <div class="form-group">
-        <label for="donation-amount">Select donation amount:</label>
-        <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$1" required> $1
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$5"> $5
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$10"> $10
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="$20"> $20
-          </label>
-          <label class="btn btn-outline-light">
-            <input type="radio" name="donation" value="Other"> Other: $
-            <input type="number" name="otherAmount" id="otherAmount" min="1" class="form-control d-inline-block" style="width: 100px;">
-          </label>
-        </div>
-      </div>
-      <button type="submit" class="btn btn-primary mt-3">Process Donation</button>
-    </form>
-    <p id="form-response" class="mt-3"></p>
-  </div>
-</section>
-
-
-
-  <section id="newsletter" class="bg-light py-5">
-  <div class="container text-center">
-    <h1>Newsletter</h1>
-    <p>Sign up for our newsletter to stay updated on our latest discoveries, offerings and events.</p>
-    <form id="newsletter-form" action="https://formspree.io/f/mleqkpnq" method="POST">
-      <div class="form-group">
-        <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-      </div>
-      <button type="submit" class="btn btn-primary">Subscribe</button>
-    </form>
-    <p id="form-response" class="mt-3"></p>
-  </div>
-</section>
-
-
-  <section id="courses" class="bg-info text-white py-5">
+  <section id="donation" class="bg-secondary text-white py-5">
     <div class="container text-center">
-      <h1>Courses</h1>
-      <ul class="list-unstyled">
-        <li><strong>Legal Filing in the Brewing Industry:</strong> A detailed overview of the regulatory and legal framework critical to establishing and operating a brewery.</li>
-        <li><strong>Design and Construction of Brewery Hardware:</strong> A comprehensive study of the technical aspects of brewery equipment and infrastructure.</li>
-        <li><strong>Learning to Brew Beer:</strong> An in-depth exploration of the brewing process from grain to glass.</li>
-        <li><strong>Fermentation Science:</strong> A focus on the biological and chemical processes behind fermentation.</li>
-        <li><strong>Bottling and Kegging Techniques:</strong> Covers the final stages of the brewing process, focusing on preservation and packaging of beer.</li>
-        <li><strong>Malting and Roasting:</strong> Training in selecting grains, controlling malting conditions, and roasting.</li>
-        <li><strong>Ecotourism and Sustainable Brewing Practices:</strong> Explores the integration of brewery operations with local agriculture and tourism sectors.</li>
-        <li><strong>Cultivation of Malts and Hops:</strong> Teaches the cultivation of barley and hops, focusing on sustainable farming techniques.</li>
-        <li><strong>Supply Chain Management for Breweries:</strong> Examination of supply chain management tailored specifically for brewery operations.</li>
-        <li><strong>Empowering Women in Brewery Entrepreneurship:</strong> Highlights the significant contributions women can make to the brewing industry.</li>
-      </ul>
+      <h1>Donate</h1>
+      <p>Your donations help us continue our mission of sharing global brews. Thank you for your support!</p>
+      <p>We are waiting for our 501(c)(3) status before fully accepting financial aid. Please fill out the form below, and we will reach out once we are ready to process your donation.</p>
+      <form id="donation-form" action="https://formspree.io/f/myyranpg" method="POST">
+        <div class="form-group">
+          <label for="email">Your email:</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="donation-amount">Select donation amount:</label>
+          <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+            <label class="btn btn-outline-light">
+              <input type="radio" name="donation" value="$1" required> $1
+            </label>
+            <label class="btn btn-outline-light">
+              <input type="radio" name="donation" value="$5"> $5
+            </label>
+            <label class="btn btn-outline-light">
+              <input type="radio" name="donation" value="$10"> $10
+            </label>
+            <label class="btn btn-outline-light">
+              <input type="radio" name="donation" value="$20"> $20
+            </label>
+            <label class="btn btn-outline-light">
+              <input type="radio" name="donation" value="Other"> Other: $
+              <input type="number" name="otherAmount" id="otherAmount" min="1" class="form-control d-inline-block" style="width: 100px;">
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Process Donation</button>
+      </form>
+      <p id="form-response" class="mt-3"></p>
     </div>
   </section>
 
-  <footer class="bg-dark text-white py-3">
+  <section id="newsletter" class="bg-light py-5">
     <div class="container text-center">
-      <p>&copy; 2024 <a class="text-white" href="https://github.com/FairINC/BrewsBeyondBorders">Brews Beyond Borders</a></p>
+      <h1>Newsletter</h1>
+      <p>Sign up for our newsletter to stay updated on our latest offerings and events.</p>
+      <form id="newsletter-form" action="https://formspree.io/f/xnqybjkw" method="POST">
+        <div class="form-group">
+          <label for="newsletter-email">Your email:</label>
+          <input type="email" name="email" class="form-control" id="newsletter-email" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p id="newsletter-response" class="mt-3"></p>
     </div>
-  </footer>
+  </section>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="JS/scripts.js"></script>
+  <section id="courses" class="py-5" style="background-color: forestgreen; color: white; position: relative;">
+    <canvas id="treeCanvas" width="800" height="400"></canvas>
+    <div class="container text-center">
+      <h1>Courses</h1>
+      <p>We offer various courses to help you start and run your brewery successfully.</p>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('donation-form');
+      const responseContainer = document.getElementById('form-response');
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        responseContainer.textContent = '';
+
+        const email = form.email.value;
+        const donationRadio = form.donation.value;
+        let donationAmount = donationRadio;
+
+        if (donationRadio === 'Other') {
+          const otherAmount = form.otherAmount.value;
+          if (otherAmount && parseFloat(otherAmount) > 0) {
+            donationAmount = `$${otherAmount}`;
+          } else {
+            responseContainer.textContent = 'Please enter a valid donation amount.';
+            responseContainer.classList.add('text-danger');
+            return;
+          }
+        }
+
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              email: email,
+              donation: donationAmount
+            })
+          });
+
+          if (response.ok) {
+            form.reset();
+            responseContainer.textContent = 'Thank you for your pledge! We will contact you once we are ready to process your donation.';
+            responseContainer.classList.remove('text-danger');
+            responseContainer.classList.add('text-success');
+          } else {
+            responseContainer.textContent = 'Oops! There was a problem with your submission.';
+            responseContainer.classList.add('text-danger');
+          }
+        } catch (error) {
+          responseContainer.textContent = 'Oops! There was a problem with your submission.';
+          responseContainer.classList.add('text-danger');
+        }
+      });
+
+      const newsletterForm = document.getElementById('newsletter-form');
+      const newsletterResponseContainer = document.getElementById('newsletter-response');
+
+      newsletterForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        newsletterResponseContainer.textContent = '';
+
+        const email = newsletterForm.email.value;
+
+        try {
+          const response = await fetch(newsletterForm.action, {
+            method: newsletterForm.method,
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+              email: email
+            })
+          });
+
+          if (response.ok) {
+            newsletterForm.reset();
+            newsletterResponseContainer.textContent = 'Thank you for signing up! We will keep you updated with our latest offerings and events.';
+            newsletterResponseContainer.classList.remove('text-danger');
+            newsletterResponseContainer.classList.add('text-success');
+          } else {
+            newsletterResponseContainer.textContent = 'Oops! There was a problem with your submission.';
+            newsletterResponseContainer.classList.add('text-danger');
+          }
+        } catch (error) {
+          newsletterResponseContainer.textContent = 'Oops! There was a problem with your submission.';
+          newsletterResponseContainer.classList.add('text-danger');
+        }
+      });
+
+      const canvas = document.getElementById('treeCanvas');
+      const ctx = canvas.getContext('2d');
+
+      function drawTree(x, y, height) {
+        ctx.beginPath();
+        ctx.moveTo(x, y);
+        ctx.lineTo(x - 20, y + height);
+        ctx.lineTo(x + 20, y + height);
+        ctx.closePath();
+        ctx.fillStyle = '#228B22'; // Forest green
+        ctx.fill();
+      }
+
+      function drawHop(x, y, size) {
+        ctx.beginPath();
+        ctx.ellipse(x, y, size, size * 1.5, 0, 0, Math.PI * 2);
+        ctx.fillStyle = '#6B8E23'; // Olive drab
+        ctx.fill();
+        ctx.beginPath();
+        ctx.moveTo(x - size, y);
+        ctx.lineTo(x, y - size * 1.5);
+        ctx.lineTo(x + size, y);
+        ctx.closePath();
+        ctx.fill();
+      }
+
+      // Draw multiple trees and hops
+      for (let i = 0; i < 5; i++) {
+        drawTree(150 + i * 130, 100, 150);
+        drawHop(150 + i * 130, 250, 20);
+      }
+    });
+  </script>
 </body>
 </html>
