@@ -1,3 +1,12 @@
+#landing {
+  position: relative;
+  background: url('../images/BBB_background.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
 @keyframes fogAnimation {
   0% {
     transform: translateX(0);
@@ -17,21 +26,13 @@
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%);
   background-size: 200% 100%;
   animation: fogAnimation 10s linear infinite;
-  z-index: -1;
+  z-index: 1; /* Place the fog above the background image */
 }
-
-#landing {
-  position: relative;
-}
-
 
 .text-center {
   position: relative; /* Ensure the text is positioned relative to its container */
-  z-index: 1; /* Place the text above the fog */
+  z-index: 2; /* Place the text above the fog */
 }
-
-
-
 
 .btn-dark-forest {
   background-color: #2ecc71; /* Green */
@@ -62,14 +63,6 @@ section {
   align-items: center;
 }
 
-#landing {
-  background: url('../images/BBB Background.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
 .logo-text {
   font-family: 'Roboto Slab', serif;
   font-size: 1.5rem;
@@ -84,4 +77,3 @@ footer {
 html {
   scroll-behavior: smooth;
 }
-
