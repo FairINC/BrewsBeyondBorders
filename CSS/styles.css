@@ -1,5 +1,10 @@
-#landing {
-  position: relative;
+@keyframes fogAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 #landing::before {
@@ -7,11 +12,18 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 200%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black fog */
-  z-index: -1; /* Place the fog behind the text */
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%);
+  background-size: 200% 100%;
+  animation: fogAnimation 10s linear infinite;
+  z-index: -1;
 }
+
+#landing {
+  position: relative;
+}
+
 
 .text-center {
   position: relative; /* Ensure the text is positioned relative to its container */
