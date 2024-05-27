@@ -5,6 +5,10 @@
   background-attachment: fixed;
   color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @keyframes fogAnimation {
@@ -27,6 +31,7 @@
   background-size: 200% 100%;
   animation: fogAnimation 10s linear infinite;
   z-index: 1; /* Place the fog above the background image */
+  pointer-events: none; /* Ensure the fog layer doesn't interfere with user interactions */
 }
 
 .text-center {
