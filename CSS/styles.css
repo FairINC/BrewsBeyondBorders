@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 2; 
 }
 
 @keyframes fogAnimation {
@@ -34,7 +35,7 @@
 
 .text-center {
   position: relative; /* Ensure the text is positioned relative to its container */
-  z-index: 2; /* Place the text above the fog */
+  z-index: 3; /* Place the text above the fog */
 }
 
 .btn-dark-forest {
