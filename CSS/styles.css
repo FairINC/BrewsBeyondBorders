@@ -1,7 +1,16 @@
+#donation {
+  background-image: url('../images/Donations.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh; /* Set height to half of the viewport height */
+}
+
 .course-item {
   margin-bottom: 15px;
 }
 
+/* Add shading to course buttons */
 .course-title {
   background: linear-gradient(to bottom, #3cb371, #2ecc71); /* Gradient from light to dark green */
   color: white;
@@ -10,20 +19,23 @@
   text-align: center;
   font-size: 18px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smoother shading */
   border-radius: 10px; /* Rounded edges */
   width: 100%;
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
 }
 
+/* Adjust hover effect for course buttons */
 .course-title:hover {
   background: linear-gradient(to bottom, #2ecc71, #27ae60); /* Gradient on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover for depth */
 }
 
-
+/* Adjust dropdown animation for smoother transition */
 .course-description {
   display: none;
   background-color: rgba(0, 0, 0, 0.2);
@@ -31,6 +43,7 @@
   padding: 15px;
   margin-top: 5px;
   text-align: left;
+  transition: all 0.5s ease; /* Adjust transition timing and easing */
 }
 
 #courses {
