@@ -7,7 +7,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; 
+  z-index: 1; /* Adjusted z-index to place the background image below the fog */
+}
+
+#landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Adjusted width to cover the entire viewport */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%);
+  animation: fogAnimation 10s linear infinite;
+  z-index: 2; /* Adjusted z-index to place the fog above the background image */
+  pointer-events: none; /* Ensure the fog layer doesn't interfere with user interactions */
 }
 
 .text-center {
@@ -25,18 +38,8 @@
   }
 }
 
-#landing::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%; /* Adjusted width to cover the entire viewport */
-  height: 100%;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%);
-  animation: fogAnimation 10s linear infinite;
-  z-index: 2; /* Place the fog above the background image */
-  pointer-events: none; /* Ensure the fog layer doesn't interfere with user interactions */
-}
+
+
 
 .btn-dark-forest {
   background-color: #2ecc71; /* Green */
