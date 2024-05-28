@@ -1,11 +1,13 @@
 #landing {
   position: relative;
-  background: url('images/BBB_Background.jpg') no-repeat center center/cover fixed;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  background-image: url('images/BBB_Background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .text-center {
