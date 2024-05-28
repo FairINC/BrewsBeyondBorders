@@ -11,9 +11,17 @@
 }
 
 .text-center {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   position: relative;
+}
 
+.white-text {
+  color: white; /* Set color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* White shadow for black text */
+}
+
+.black-text {
+  color: black; /* Set color to black */
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Black shadow for white text */
 }
 
 .btn-dark-forest {
