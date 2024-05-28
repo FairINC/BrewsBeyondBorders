@@ -59,8 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
       otherAmountInput.classList.remove('show');
     }
   });
-});
-const courseTitles = document.querySelectorAll('.course-title');
+
+  // Course descriptions toggle functionality
+  const courseTitles = document.querySelectorAll('.course-title');
 
   courseTitles.forEach(title => {
     title.addEventListener('click', function () {
