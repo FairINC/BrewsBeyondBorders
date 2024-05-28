@@ -1,23 +1,18 @@
 #landing {
   position: relative;
-  background-image: url('images/BBB Background.jpg') no-repeat center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background: url('images/BBB Background.jpg') no-repeat center center/cover fixed; /* Updated background property */
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1; /* Adjusted z-index to place the background image below the fog */
+  z-index: 1;
 }
 
 .text-center {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-  position: relative; /* Ensure the text is positioned relative to its container */
-  z-index: 3; /* Place the text above the fog */
+  position: relative;
+  z-index: 3;
 }
-
-
-
 
 .btn-dark-forest {
   background-color: #2ecc71; /* Green */
