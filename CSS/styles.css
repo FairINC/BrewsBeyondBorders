@@ -3,13 +3,17 @@
   background: url('images/BBB Background.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: red;
-  z-index: 2; 
+  z-index: 1; 
+}
+
+.text-center {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  position: relative; /* Ensure the text is positioned relative to its container */
+  z-index: 3; /* Place the text above the fog */
 }
 
 @keyframes fogAnimation {
@@ -30,13 +34,8 @@
   height: 100%;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 50%);
   animation: fogAnimation 10s linear infinite;
-  z-index: 1; /* Place the fog above the background image */
+  z-index: 2; /* Place the fog above the background image */
   pointer-events: none; /* Ensure the fog layer doesn't interfere with user interactions */
-}
-
-.text-center {
-  position: relative; /* Ensure the text is positioned relative to its container */
-  z-index: 3; /* Place the text above the fog */
 }
 
 .btn-dark-forest {
