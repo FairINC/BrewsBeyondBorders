@@ -60,3 +60,25 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+const courseTitles = document.querySelectorAll('.course-title');
+
+  courseTitles.forEach(title => {
+    title.addEventListener('click', function () {
+      const description = this.nextElementSibling;
+
+      // Close any open descriptions
+      document.querySelectorAll('.course-description').forEach(desc => {
+        if (desc !== description) {
+          desc.style.display = 'none';
+        }
+      });
+
+      // Toggle the clicked description
+      if (description.style.display === 'block') {
+        description.style.display = 'none';
+      } else {
+        description.style.display = 'block';
+      }
+    });
+  });
+});
