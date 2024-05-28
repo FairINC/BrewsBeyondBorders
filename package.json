@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "obfuscate-js": "node obfuscate.js"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^1.6.0"
+  }
+}
