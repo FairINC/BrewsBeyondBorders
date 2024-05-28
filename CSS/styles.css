@@ -1,3 +1,32 @@
+.course-item {
+  margin-bottom: 15px;
+}
+
+.course-title {
+  background-color: #27ae60; /* Darker Green */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  text-align: left;
+  width: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.course-title:hover {
+  background-color: #2ecc71; /* Lighter Green */
+}
+
+.course-description {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 15px;
+  margin-top: 5px;
+  text-align: left;
+}
+
 #courses {
   background-image: url('../images/coursesBG.jpg');
   background-size: cover;
