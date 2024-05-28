@@ -3,7 +3,6 @@
   background: url('images/BBB Background.jpg') no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   height: 100vh;
   display: flex;
