@@ -1,3 +1,4 @@
+/* Different Screen Size */
 @media only screen and (max-width: 768px) {
   #landing {
     background-color: black;
@@ -23,20 +24,45 @@
   }
 }
 
-/* About Us section */
+/* Define the fonts */
+@font-face {
+  font-family: 'Brett and Beer';
+  src: url('fonts/Brett and Beer.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Beer';
+  src: url('fonts/BEER.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Beerbar-Regular';
+  src: url('fonts/Beerbar-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Beers';
+  src: url('fonts/Beers.ttf') format('truetype');
+}
+
+/* Apply the fonts to the sections */
 .about-us-section {
   font-family: 'Brett and Beer', sans-serif;
 }
-/* Nav section */
+
 .nav-section {
   font-family: 'Beer', sans-serif;
 }
 
-/* Newsletter section */
 .newsletter-section {
   font-family: 'Beerbar-Regular', sans-serif;
 }
 
+.courses-section {
+  font-family: 'Beers', sans-serif;
+}
+
+/* Donation section */
 #donation {
   background-image: url('../images/Donations.jpg');
   background-size: cover;
@@ -46,15 +72,12 @@
 }
 
 /* Courses section */
-.courses-section {
-  font-family: 'Beers', sans-serif;
-}
 
 .course-item {
   margin-bottom: 15px;
 }
 
-/* Add shading to course buttons */
+/* Add shading to buttons */
 .course-title {
   background: linear-gradient(to bottom, #3cb371, #2ecc71); /* Gradient from light to dark green */
   color: white;
@@ -120,7 +143,7 @@
   align-items: center;
 }
 
-
+/* Landing section */
 #landing {
   position: relative;
   height: 100vh;
