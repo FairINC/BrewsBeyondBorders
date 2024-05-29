@@ -1,48 +1,22 @@
-/* Different Screen Size */
-@media only screen and (max-width: 768px) {
-  #landing {
-    background-color: black;
-  }
-  #landing img {
-    display: block;
-    margin: 0 auto;
-    max-width: 80%; /* Adjust the width of the image as needed */
-    height: auto;
-  }
-}
-
-@media (min-width: 576px) {
-  .course-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .course-item {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-}
-
 /* Define the fonts */
 @font-face {
   font-family: 'Brett and Beer';
-  src: url('..fonts/Brett and Beer.ttf') format('truetype');
+  src: url('../font/Brett and Beer.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Beer';
-  src: url('..fonts/BEER.TTF') format('truetype');
+  src: url('../font/BEER.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Beerbar-Regular';
-  src: url('..fonts/Beerbar-Regular.ttf') format('truetype');
+  src: url('../font/Beerbar-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Beers';
-  src: url('..fonts/Beers.ttf') format('truetype');
+  src: url('../font/Beers.ttf') format('truetype');
 }
 
 /* Apply the fonts to the sections */
@@ -72,7 +46,6 @@
 }
 
 /* Courses section */
-
 .course-item {
   margin-bottom: 15px;
 }
@@ -135,7 +108,6 @@
   position: relative;
   z-index: 1; /* Ensure the text is above the overlay */
 }
-
 
 .course-item {
   display: flex;
