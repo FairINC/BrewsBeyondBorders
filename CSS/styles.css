@@ -44,6 +44,17 @@
   background-repeat: no-repeat;
   height: 50vh; /* Set height to half of the viewport height */
 }
+/* Newsletter section */
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    background: linear-gradient(135deg, #32CD32, #006400); /* Light green to dark green gradient */
+}
 
 /* Courses section */
 .course-item {
