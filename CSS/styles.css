@@ -10,6 +10,23 @@
   }
 }
 
+@media (min-width: 576px) {
+  .course-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .course-item {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
+/* About Us section */
+.about-us-section {
+  font-family: 'Brett and Beer', sans-serif;
+}
 /* Nav section */
 .nav-section {
   font-family: 'Beer', sans-serif;
@@ -20,23 +37,17 @@
   font-family: 'Beerbar-Regular', sans-serif;
 }
 
-/* Courses section */
-.courses-section {
-  font-family: 'Beers', sans-serif;
-}
-
-/* About Us section */
-.about-us-section {
-  font-family: 'Brett and Beer', sans-serif;
-}
-
-
 #donation {
   background-image: url('../images/Donations.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 50vh; /* Set height to half of the viewport height */
+}
+
+/* Courses section */
+.courses-section {
+  font-family: 'Beers', sans-serif;
 }
 
 .course-item {
@@ -101,31 +112,22 @@
   position: relative;
   z-index: 1; /* Ensure the text is above the overlay */
 }
-@media (min-width: 576px) {
-  .course-item {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .course-item {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-}
+
 
 .course-item {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
 #landing {
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('../images/BBB_Background.jpg');
+  background-image: url('../images/BackgroundLandscape.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
