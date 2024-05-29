@@ -27,22 +27,22 @@
 /* Define the fonts */
 @font-face {
   font-family: 'Brett and Beer';
-  src: url('fonts/Brett and Beer.ttf') format('truetype');
+  src: url('..fonts/Brett and Beer.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Beer';
-  src: url('fonts/BEER.TTF') format('truetype');
+  src: url('..fonts/BEER.TTF') format('truetype');
 }
 
 @font-face {
   font-family: 'Beerbar-Regular';
-  src: url('fonts/Beerbar-Regular.ttf') format('truetype');
+  src: url('..fonts/Beerbar-Regular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Beers';
-  src: url('fonts/Beers.ttf') format('truetype');
+  src: url('..fonts/Beers.ttf') format('truetype');
 }
 
 /* Apply the fonts to the sections */
