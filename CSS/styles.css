@@ -209,3 +209,65 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+/* General styling for the navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-left: 1rem;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin-bottom: 4px;
+    border-radius: 3px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list li {
+        text-align: center;
+        margin: 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
