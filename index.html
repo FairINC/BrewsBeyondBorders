@@ -42,7 +42,58 @@
     </div>
   </section>
 
-  <section id="courses" class="courses-section bg-success text-white">
+  
+  <section id="donate" class="donate-section bg-light">
+    <div class="container">
+      <h2>Donate</h2>
+      <p>Your donations help us continue our mission of supporting global breweries and fostering economic development.</p>
+      <form id="donation-form" action="https://formspree.io/f/yourformid" method="POST">
+        <div class="form-group">
+          <label for="email">Your email:</label>
+          <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="donation-amount">Select donation amount:</label>
+          <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
+            <label class="btn btn-outline-dark">
+              <input type="radio" name="donation" value="$1" required> $1
+            </label>
+            <label class="btn btn-outline-dark">
+              <input type="radio" name="donation" value="$5"> $5
+            </label>
+            <label class="btn btn-outline-dark">
+              <input type="radio" name="donation" value="$10"> $10
+            </label>
+            <label class="btn btn-outline-dark">
+              <input type="radio" name="donation" value="$20"> $20
+            </label>
+            <label class="btn btn-outline-dark">
+              <input type="radio" name="donation" value="Other"> Other: $
+              <input type="number" name="otherAmount" id="otherAmountInput" min="1" class="form-control d-inline-block collapse" style="width: 100px;">
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-success">Process Donation</button>
+      </form>
+      <div id="form-response" class="mt-3"></div>
+    </div>
+  </section>
+
+  <section id="newsletter" class="newsletter-section bg-dark text-white">
+    <div class="container newsletter-container">
+      <h2>Newsletter</h2>
+      <p>Subscribe to our newsletter to receive updates on our latest initiatives and events.</p>
+      <form id="newsletter-form" action="https://formspree.io/f/yourformid" method="POST">
+        <div class="form-group">
+          <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <div id="newsletter-response" class="mt-3"></div>
+    </div>
+  </section>
+  
+<section id="courses" class="courses-section bg-success text-white">
     <div class="container">
       <h2 class="courses-title">Courses</h2>
       <div class="row">
@@ -107,56 +158,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section id="donate" class="donate-section bg-light">
-    <div class="container">
-      <h2>Donate</h2>
-      <p>Your donations help us continue our mission of supporting global breweries and fostering economic development.</p>
-      <form id="donation-form" action="https://formspree.io/f/yourformid" method="POST">
-        <div class="form-group">
-          <label for="email">Your email:</label>
-          <input type="email" name="email" class="form-control" id="email" placeholder="Enter your email" required>
-        </div>
-        <div class="form-group">
-          <label for="donation-amount">Select donation amount:</label>
-          <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
-            <label class="btn btn-outline-dark">
-              <input type="radio" name="donation" value="$1" required> $1
-            </label>
-            <label class="btn btn-outline-dark">
-              <input type="radio" name="donation" value="$5"> $5
-            </label>
-            <label class="btn btn-outline-dark">
-              <input type="radio" name="donation" value="$10"> $10
-            </label>
-            <label class="btn btn-outline-dark">
-              <input type="radio" name="donation" value="$20"> $20
-            </label>
-            <label class="btn btn-outline-dark">
-              <input type="radio" name="donation" value="Other"> Other: $
-              <input type="number" name="otherAmount" id="otherAmountInput" min="1" class="form-control d-inline-block collapse" style="width: 100px;">
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-success">Process Donation</button>
-      </form>
-      <div id="form-response" class="mt-3"></div>
-    </div>
-  </section>
-
-  <section id="newsletter" class="newsletter-section bg-dark text-white">
-    <div class="container newsletter-container">
-      <h2>Newsletter</h2>
-      <p>Subscribe to our newsletter to receive updates on our latest initiatives and events.</p>
-      <form id="newsletter-form" action="https://formspree.io/f/yourformid" method="POST">
-        <div class="form-group">
-          <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Subscribe</button>
-      </form>
-      <div id="newsletter-response" class="mt-3"></div>
     </div>
   </section>
 
