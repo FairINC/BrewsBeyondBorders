@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS9SN4RL8B"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS9SN4RL8B"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TS9SN4RL8B');
+  </script>
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-        gtag('config', 'G-TS9SN4RL8B');
-    </script>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brews Beyond Borders</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <meta name="theme-color" content="#ffffff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brews Beyond Borders</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
-    <header class="bg-dark white-text py-3 fixed-top">
-        <nav class="container d-flex justify-content-between align-items-center nav-section">
-            <div class="d-flex align-items-center">
-                <a href="#"><img src="images/Logo.png" alt="Brews Beyond Borders" style="height: 50px;"></a>
-                <span class="ml-2 logo-text">Brews Beyond Borders</span>
-            </div>
-            <div class="menu-toggle" id="mobile-menu">
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-list nav">
-                <li class="nav-item"><a class="nav-link white-text" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link white-text" href="#donation">Donation</a></li>
-                <li class="nav-item"><a class="nav-link white-text" href="#newsletter">Newsletter</a></li>
-                <li class="nav-item"><a class="nav-link white-text" href="#courses">Courses</a></li>
-            </ul>
-        </nav>
-        <div class="mobile-social-icons d-none">
-            <!-- Social icons will be hidden by default on larger screens -->
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="images/email.png" alt="Email"></a>
-        </div>
-    </header>
+<header class="bg-dark white-text py-3 fixed-top">
+  <nav class="container d-flex justify-content-between align-items-center nav-section">
+    <div class="d-flex align-items-center">
+      <a href="#"><img src="images/Logo.png" alt="Brews Beyond Borders" style="height: 50px;"></a>
+      <span class="ml-2 logo-text">Brews Beyond Borders</span>
+    </div>
+    <div class="menu-toggle d-block d-lg-none" id="mobile-menu">
+      <span></span>
+      <span></span>
+    </div>
+    <ul class="nav-list nav d-none d-lg-flex">
+      <li class="nav-item"><a class="nav-link white-text" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link white-text" href="#donation">Donation</a></li>
+      <li class="nav-item"><a class="nav-link white-text" href="#newsletter">Newsletter</a></li>
+      <li class="nav-item"><a class="nav-link white-text" href="#courses">Courses</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-social-icons d-none">
+    <!-- Social icons will be hidden by default on larger screens -->
+    <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/email.png" alt="Email"></a>
+  </div>
+</header>
 
     <section id="landing" class="d-flex align-items-center justify-content-center">
         <div class="text-center">
@@ -128,6 +123,102 @@
                     <div class="course-description">
                         A detailed overview of the regulatory and legal framework critical to establishing and operating a brewery.
                     </div>
-                </div>
-                <!-- More
+                 </div>
+                <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Brewery Hardware</button>
+          <div class="course-description">
+            A comprehensive study of the technical aspects of brewery equipment and infrastructure.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Brewing Process</button>
+          <div class="course-description">
+            An in-depth exploration of the brewing process from grain to glass.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Fermentation</button>
+          <div class="course-description">
+            A focus on the biological and chemical processes behind fermentation.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Bottling and Kegging</button>
+          <div class="course-description">
+            Covers the final stages of the brewing process, focusing on preservation and packaging of beer.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Malting and Roasting</button>
+          <div class="course-description">
+            Training in selecting grains, controlling malting conditions, and roasting.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Ecotourism and Brewing</button>
+          <div class="course-description">
+            Explores the integration of brewery operations with local agriculture and tourism sectors.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Cultivation of Quality Malts</button>
+          <div class="course-description">
+            Provides knowledge about the cultivation of quality malts and sustainable farming practices.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Marketing</button>
+          <div class="course-description">
+            Teaches marketing strategies tailored to the unique demands of the brewery industry.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Business Management</button>
+          <div class="course-description">
+            Offers insight into managing a brewery's financial and operational aspects.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">American Brewing Techniques</button>
+          <div class="course-description">
+            Provides training on popular American brewing methods, incorporating the latest industry trends.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Brewery Maintenance</button>
+          <div class="course-description">
+            Offers a guide to the regular maintenance of brewery equipment, ensuring operational efficiency.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Supply Chain</button>
+          <div class="course-description">
+            Focuses on the management of supply chain logistics from raw material procurement to product distribution.
+          </div>
+        </div>
+        <div class="col-6 col-md-3 course-item">
+          <button class="course-title">Agriculture Economics</button>
+          <div class="course-description">
+            Teaches the economic principles behind agricultural production, market trends, and financial planning.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+              
+<footer class="bg-dark white-text text-center py-3">
+  <div class="container">
+    <p>&copy; 2023 Brews Beyond Borders. All rights reserved.</p>
+     <p>     <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+    <a href="#"><img src="images/email.png" alt="Email"></a></p>
+  </div>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
 
