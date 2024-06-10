@@ -2,7 +2,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -57,6 +57,19 @@ h1, h2, h3 {
   background: white;
   margin: 4px 0;
   transition: 0.4s;
+}
+
+/* Landing Section */
+#landing {
+  background-image: url('images/landing-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
 /* Section Styles */
