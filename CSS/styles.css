@@ -61,7 +61,7 @@ h1, h2, h3 {
 
 /* Landing Section */
 #landing {
-  background-image: url('images/landing-bg.jpg');
+  background-image: url('..images/MinimalBG.jpg');
   background-size: cover;
   background-position: center;
   height: 100vh;
