@@ -1,273 +1,151 @@
-/* Define the fonts */
-@font-face {
-  font-family: 'Brett and Beer';
-  src: url('../font/Brett and Beer.ttf') format('truetype');
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-@font-face {
-  font-family: 'Beer';
-  src: url('../font/BEER.TTF') format('truetype');
+h1, h2, h3 {
+  font-weight: bold;
 }
 
-@font-face {
-  font-family: 'Beerbar-Regular';
-  src: url('../font/Beerbar-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Beers';
-  src: url('../font/Beers.ttf') format('truetype');
-}
-
-/* Apply the fonts to the sections */
-.about-us-section {
-  font-family: 'Brett and Beer', sans-serif;
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
 }
 
 .nav-section {
-  font-family: 'Beer', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.newsletter-section {
-  font-family: 'Beerbar-Regular', sans-serif;
+.navbar-brand img {
+  max-height: 50px;
 }
 
-.courses-section {
-  font-family: 'Beers', sans-serif;
+.nav-list {
+  display: flex;
+  list-style-type: none;
 }
 
-/* Donation section */
-#donation {
-  background-image: url('../images/Donations.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh; /* Set height to half of the viewport height */
-}
-/* Newsletter section */
-.newsletter-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: white;
-    text-align: center;
-    background: linear-gradient(135deg, #32CD32, #006400); /* Light green to dark green gradient */
+.nav-item {
+  margin: 0 1rem;
 }
 
-/* Courses section */
-.course-item {
-  margin-bottom: 15px;
-}
-
-/* Add shading to buttons */
-.course-title {
-  background: linear-gradient(to bottom, #3cb371, #2ecc71); /* Gradient from light to dark green */
+.nav-link {
   color: white;
-  padding: 20px;
-  border: none;
-  text-align: center;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s, box-shadow 0.3s; /* Add transition for smoother shading */
-  border-radius: 10px; /* Rounded edges */
-  width: 100%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
-}
-
-/* Adjust hover effect for course buttons */
-.course-title:hover {
-  background: linear-gradient(to bottom, #2ecc71, #27ae60); /* Gradient on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow on hover for depth */
-}
-
-/* Adjust dropdown animation for smoother transition */
-.course-description {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.2);
-  color: white;
-  padding: 15px;
-  margin-top: 5px;
-  text-align: left;
-  transition: all 0.5s ease; /* Adjust transition timing and easing */
-}
-
-#courses {
-  background-image: url('../images/coursesBG.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-#courses::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); /* Add the box shadow to create an overlay */
-}
-
-#courses .container {
-  position: relative;
-  z-index: 1; /* Ensure the text is above the overlay */
-}
-
-.course-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Landing section */
-#landing {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url('../images/BackgroundLandscape.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#landing::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.2); /* Add the box shadow to create an overlay */
-}
-
-.text-center {
-  position: relative;
-  z-index: 1; /* Ensure the text is above the overlay */
-  color: white; /* Set the text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow */
-}
-
-.white-text {
-  color: white; /* Set color to white */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* White shadow for black text */
-}
-
-.black-text {
-  color: black; /* Set color to black */
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7); /* Black shadow for white text */
-}
-
-.btn-dark-forest {
-  background-color: #2ecc71; /* Green */
-  border-color: #27ae60; /* Darker Green */
-  color: #fff; /* White text */
-}
-
-.btn-dark-forest:hover {
-  background-color: #27ae60; /* Darker Green on hover */
-  border-color: #27ae60; /* Darker Green on hover */
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
 }
 
 .nav-link:hover {
   text-decoration: underline;
 }
 
-section {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.logo-text {
-  font-family: 'Roboto Slab', serif;
-  font-size: 1.5rem;
-}
-
-footer {
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* General styling for the navigation */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #333;
-}
-
-.nav-list {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.nav-list li {
-    margin-left: 1rem;
-}
-
-.nav-list a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-}
-
+/* Mobile Menu */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .menu-toggle span {
-    height: 3px;
-    width: 25px;
-    background: white;
-    margin-bottom: 4px;
-    border-radius: 3px;
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  transition: 0.4s;
 }
 
-/* Mobile view */
+/* Section Styles */
+section {
+  padding: 4rem 0;
+}
+
+.bg-dark {
+  background-color: #333;
+}
+
+.bg-light {
+  background-color: #f7f7f7;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-info {
+  background-color: #17a2b8;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
+}
+
+.about-us-section, .newsletter-section {
+  text-align: center;
+}
+
+.newsletter-container {
+  position: relative;
+}
+
+/* Course Styles */
+.course-item {
+  margin-bottom: 1.5rem;
+}
+
+.course-title {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.course-title:hover {
+  background-color: #0056b3;
+}
+
+.course-description {
+  display: none;
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  border: 1px solid #007bff;
+  margin-top: 0.5rem;
+}
+
+.show-description {
+  display: block;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Media Queries */
 @media (max-width: 768px) {
-    .nav-list {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .nav-list li {
-        text-align: center;
-        margin: 0;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-list.active {
-        display: flex;
-    }
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-list.active {
+    display: flex;
+  }
+  .menu-toggle {
+    display: flex;
+  }
 }
