@@ -1,226 +1,240 @@
 /* General Styles */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
+h1,
+h2,
+h3 {
+    font-weight: bold;
 }
 
 /* Custom Fonts */
 @font-face {
-  font-family: 'Beer';
-  src: url('../font/BEER.TTF');
+    font-family: 'Beer';
+    src: url('../font/BEER.TTF');
 }
 
 @font-face {
-  font-family: 'Beerbar';
-  src: url('../font/Beerbar-Regular.ttf');
+    font-family: 'Beerbar';
+    src: url('../font/Beerbar-Regular.ttf');
 }
 
 @font-face {
-  font-family: 'Beers';
-  src: url('../font/Beers.ttf');
+    font-family: 'Beers';
+    src: url('../font/Beers.ttf');
 }
 
 @font-face {
-  font-family: 'Brett and Beer';
-  src: url('../font/Brett and Beer.ttf');
+    font-family: 'Brett and Beer';
+    src: url('../font/Brett and Beer.ttf');
 }
 
 /* Header Styles */
 .header {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
 }
 
 .nav-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar-brand img {
-  max-height: 50px;
+    max-height: 50px;
 }
 
 .nav-list {
-  display: flex;
-  list-style-type: none;
+    display: flex;
+    list-style-type: none;
 }
 
 .nav-item {
-  margin: 0 1rem;
+    margin: 0 1rem;
 }
 
 .nav-link {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .nav-link:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 /* Mobile Menu */
 .menu-toggle {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .menu-toggle span {
-  height: 3px;
-  width: 25px;
-  background: white;
-  margin: 4px 0;
-  transition: 0.4s;
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
 }
 
 /* Landing Section */
 #landing {
-  background-image: url('../images/MinimalBG.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  text-align: center;
+    background-image: url('../images/MinimalBG.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
 .landing-title {
-  font-family: 'Beerbar', sans-serif;
-  font-size: 3rem;
-  margin: 0;
-  padding: 0;
+    font-family: 'Beerbar', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
 }
 
 /* Section Styles */
 section {
-  padding: 4rem 0;
+    padding: 4rem 0;
 }
 
 .bg-dark {
-  background-color: #333;
+    background-color: #333;
 }
 
 .bg-light {
-  background-color: #f7f7f7;
+    background-color: #f7f7f7;
 }
 
 .bg-secondary {
-  background-color: #6c757d;
+    background-color: #6c757d;
 }
 
 .bg-info {
-  background-color: #17a2b8;
+    background-color: #17a2b8;
 }
 
 .white-text {
-  color: white;
+    color: white;
 }
 
 .black-text {
-  color: black;
+    color: black;
 }
 
-.about-us-section, .newsletter-section {
-  text-align: center;
+.about-us-section,
+.newsletter-section {
+    text-align: center;
 }
 
 .newsletter-container {
-  position: relative;
+    position: relative;
 }
 
 /* Courses Section */
 .courses-section {
-  background-color: #28a745;
+    background-color: #28a745;
 }
 
 .courses-title {
-  font-family: 'Beers', sans-serif;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+    font-family: 'Beers', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .course-item {
-  margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .course-title {
-  background-color: #0056b3;
-  color: white;
-  border: none;
-  padding: 1rem;
-  width: 100%;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  font-family: 'Brett and Beer', sans-serif;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Brett and Beer', sans-serif;
 }
 
 .course-title:hover {
-  background-color: #003c7c;
+    background-color: #003c7c;
 }
 
 .course-description {
-  display: none;
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  border: 1px solid #0056b3;
-  margin-top: 0.5rem;
-  transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid #0056b3;
+    margin-top: 0.5rem;
+    transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
 }
 
 .show-description {
-  display: block;
-  max-height: 1000px;
-  opacity: 1;
+    display: block;
+    max-height: 1000px;
+    opacity: 1;
 }
 
 /* Footer Styles */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .nav-section {
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav-list {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px; /* Adjust spacing between items */
-  }
-  .nav-list.active {
-    display: flex;
-  }
-  .menu-toggle {
-    display: flex;
-  }
-  .mobile-social-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px; /* Adjust spacing between items */
-  }
-  .mobile-social-icons a {
-    margin: 0 5px; /* Adjust spacing between icons */
-  }
-  .d-none {
-    display: none !important; /* Hide elements with d-none class on larger screens */
-  }
+    .nav-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px; /* Adjust spacing between items */
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px; /* Adjust spacing between items */
+    }
+
+    .mobile-social-icons a {
+        margin: 0 5px; /* Adjust spacing between icons */
+    }
+
+    .d-none {
+        display: none !important; /* Hide elements with d-none class on larger screens */
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
 }
