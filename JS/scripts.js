@@ -10,6 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
   courseTitles.forEach((courseTitle) => {
     courseTitle.addEventListener("click", function() {
       const courseDescription = this.nextElementSibling;
+      const openDescriptions = document.querySelectorAll(".show-description");
+
+      // Close all open descriptions except the one being clicked
+      openDescriptions.forEach((description) => {
+        if (description !== courseDescription) {
+          description.classList.remove("show-description");
+        }
+      });
+
+      // Toggle the clicked description
       courseDescription.classList.toggle("show-description");
     });
   });
@@ -65,5 +75,18 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     };
     xhr.send(formData);
+  });
+
+  // Smooth scroll to sections
+  document.querySelectorAll('a.nav-link').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      window.scrollTo({
+        top: targetElement.offsetTop - document.querySelector('header').offsetHeight,
+        behavior: 'smooth'
+      });
+    });
   });
 });
