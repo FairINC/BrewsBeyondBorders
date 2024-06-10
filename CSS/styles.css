@@ -199,11 +199,21 @@ footer {
   .nav-list {
     display: none;
     flex-direction: column;
+    align-items: center; /* Center items vertically */
+    text-align: center; /* Center text horizontally */
   }
   .nav-list.active {
     display: flex;
   }
   .menu-toggle {
     display: flex;
+  }
+  .mobile-social-icons {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  .mobile-social-icons a {
+    margin: 0 5px; /* Adjust margin between icons */
   }
 }
