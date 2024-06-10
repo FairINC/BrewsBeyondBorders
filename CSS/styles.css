@@ -196,6 +196,7 @@ footer {
 }
 
 /* Media Queries */
+/* Media Queries */
 @media (max-width: 768px) {
   .nav-list {
     display: none;
@@ -210,7 +211,7 @@ footer {
     display: flex;
   }
   .mobile-social-icons {
-    display: flex;
+    display: none; /* Hide social icons on mobile */
     justify-content: center; /* Center items horizontally */
     margin-top: 10px; /* Adjust margin as needed */
   }
