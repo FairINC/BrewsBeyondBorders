@@ -197,6 +197,7 @@ footer {
 
 /* Media Queries */
 /* Media Queries */
+/* Media Queries */
 @media (max-width: 768px) {
   .nav-list {
     display: none;
@@ -211,11 +212,17 @@ footer {
     display: flex;
   }
   .mobile-social-icons {
-    display: none; /* Hide social icons on mobile */
+    display: flex; /* Show social icons on mobile */
     justify-content: center; /* Center items horizontally */
     margin-top: 10px; /* Adjust margin as needed */
   }
   .mobile-social-icons a {
     margin: 0 5px; /* Adjust margin between icons */
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-social-icons {
+    display: none; /* Hide social icons on larger screens */
   }
 }
