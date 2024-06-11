@@ -1,3 +1,28 @@
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center; /* Center the text horizontally */
+  padding: 1rem 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the items at the start */
+  margin-left: auto; /* Push the links to the right side */
+  margin-right: auto; /* Push the links to the left side */
+  max-width: 800px; /* Limit the width of the links */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-links a {
+  color: inherit; /* Inherit color from parent element */
+  text-decoration: none; /* Remove default underline */
+  margin: 0.5rem 0; /* Add spacing between links */
+}
+
+
 /*  text with shadow */
 .white-text {
   color: white; /* Set text color to white */
