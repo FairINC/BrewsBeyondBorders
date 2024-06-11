@@ -36,6 +36,7 @@ h1, h2, h3 {
   background-color: #333;
   color: white;
   padding: 1rem;
+  font-family: 'Beers', sans-serif;
 }
 
 .nav-section {
@@ -95,7 +96,7 @@ h1, h2, h3 {
 }
 
 .landing-title {
-  font-family: 'Beerbar', sans-serif;
+  font-family: 'Beers', sans-serif;
   font-size: 3rem;
   margin: 0;
   padding: 0;
