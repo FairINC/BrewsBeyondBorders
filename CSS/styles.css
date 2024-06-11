@@ -1,3 +1,12 @@
+/*  text with shadow */
+.white-text {
+  color: white; /* Set text color to white */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow */
+}
+.black-text {
+  color: black;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5); /* Add text shadow */
+}
 /* Full screen class*/
 .fullscreen-section {
     height: 100vh; /* 100% of the viewport height */
@@ -131,14 +140,6 @@ section {
 
 .bg-info {
   background-color: #17a2b8;
-}
-
-.white-text {
-  color: white;
-}
-
-.black-text {
-  color: black;
 }
 
 .about-us-section, .newsletter-section {
