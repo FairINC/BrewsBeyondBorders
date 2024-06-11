@@ -40,6 +40,7 @@ h1, h2, h3 {
 }
 
 .nav-section {
+  font-family: 'Brett and Beer', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
