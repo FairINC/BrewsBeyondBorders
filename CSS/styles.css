@@ -1,3 +1,8 @@
+.social-icon-img {
+  height: 30px; /* Set the height of the social media icons */
+  width: auto; /* Let the width adjust proportionally based on the height */
+}
+
 /* Footer Styles */
 footer {
   background-color: #333;
