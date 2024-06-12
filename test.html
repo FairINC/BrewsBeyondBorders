@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Include the head section -->
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brews Beyond Borders</title>
-  <!-- Include the head section -->
-  <!--#include virtual="html/head.html" -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-  <header class="bg-dark white-text py-3 fixed-top">
-    <!-- Include the navigation bar -->
-    <!--#include virtual="html/navigation.html" -->
+  <header class="bg-dark white-text py-3 fixed-top" id="header">
+    <!-- Navigation will be loaded here -->
   </header>
 
-  <section id="landing" class="d-flex align-items-center justify-content-center fullscreen-section bg-img">
-    <!-- Include the landing section -->
-    <!--#include virtual="html/landing.html" -->
-  </section>
+  <div id="content">
+    <!-- Content sections will be loaded here -->
+  </div>
 
-  <!-- Include the about section -->
-  <!--#include virtual="html/about.html" -->
+  <footer class="bg-dark white-text text-center py-3" id="footer">
+    <!-- Footer will be loaded here -->
+  </footer>
 
-  <!-- Include the donation section -->
-  <!--#include virtual="html/donation.html" -->
+  <script>
+    function includeHTML() {
+      const header = document.getElementById('header');
+      const content = document.getElementById('content');
+      const footer = document.getElementById('footer');
 
-  <!-- Include the newsletter section -->
-  <!--#include virtual="html/newsletter.html" -->
+      fetch('html/navigation.html')
+        .then(response => response.text())
+        .then(html => header.innerHTML = html);
 
-  <!-- Include the courses section -->
-  <!--#include virtual="html/courses.html" -->
+      fetch('html/landing.html')
+        .then(response => response.text())
+        .then(html => content.innerHTML += html);
 
-  <!-- Include the footer section -->
-  <!--#include virtual="html/footer.html" -->
+      fetch('html/about.html')
+        .then(response => response.text())
+        .then(html => content.innerHTML += html);
 
-  <!-- Include the scripts -->
-  <!--#include virtual="html/scripts.html" -->
+      fetch('html/donation.html')
+        .then(response => response.text())
+        .then(html => content.innerHTML += html);
+
+      fetch('html/newsletter.html')
+        .then(response => response.text())
+        .then(html => content.innerHTML += html);
+
+      fetch('html/courses.html')
+        .then(response => response.text())
+        .then(html => content.innerHTML += html);
+
+      fetch('html/footer.html')
+        .then(response => response.text())
+        .then(html => footer.innerHTML = html);
+    }
+
+    includeHTML();
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
