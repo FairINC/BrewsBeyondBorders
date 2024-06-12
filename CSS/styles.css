@@ -1,3 +1,27 @@
+.clickable-sections {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.clickable-section {
+    background-color: rgba(255, 255, 255, 0.5); /* Transparent background */
+    border: 2px solid white; /* White border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.clickable-section h2 {
+    margin: 0;
+    color: white;
+}
+
+
 .social-icon-img {
   height: 30px; /* Set the height of the social media icons */
   width: auto; /* Let the width adjust proportionally based on the height */
@@ -241,11 +265,24 @@ footer {
   text-align: center;
   padding: 1rem 0;
 }
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+ 
 
 /* Media Queries */
 /* Media Queries */
 /* Media Queries */
 @media (max-width: 768px) {
+  .clickable-sections {
+        position: static;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  .clickable-section {
+        width: 90%;
+        margin-bottom: 20px;
+    }
   .nav-list {
     display: none;
     flex-direction: column;
