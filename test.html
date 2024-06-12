@@ -25,33 +25,49 @@
       const content = document.getElementById('content');
       const footer = document.getElementById('footer');
 
-      fetch('html/navigation.html')
+      fetch('html/nav.html')
         .then(response => response.text())
-        .then(html => header.innerHTML = html);
+        .then(html => header.innerHTML = html)
+        .catch(error => console.error('Error loading nav.html:', error));
 
       fetch('html/landing.html')
         .then(response => response.text())
-        .then(html => content.innerHTML += html);
+        .then(html => content.innerHTML += html)
+        .catch(error => console.error('Error loading landing.html:', error));
 
       fetch('html/about.html')
         .then(response => response.text())
-        .then(html => content.innerHTML += html);
+        .then(html => content.innerHTML += html)
+        .catch(error => console.error('Error loading about.html:', error));
 
       fetch('html/donation.html')
         .then(response => response.text())
-        .then(html => content.innerHTML += html);
+        .then(html => content.innerHTML += html)
+        .catch(error => console.error('Error loading donation.html:', error));
 
       fetch('html/newsletter.html')
         .then(response => response.text())
-        .then(html => content.innerHTML += html);
+        .then(html => content.innerHTML += html)
+        .catch(error => console.error('Error loading newsletter.html:', error));
 
       fetch('html/courses.html')
         .then(response => response.text())
-        .then(html => content.innerHTML += html);
+        .then(html => content.innerHTML += html)
+        .catch(error => console.error('Error loading courses.html:', error));
 
       fetch('html/footer.html')
         .then(response => response.text())
-        .then(html => footer.innerHTML = html);
+        .then(html => footer.innerHTML = html)
+        .catch(error => console.error('Error loading footer.html:', error));
+
+      fetch('html/scripts.html')
+        .then(response => response.text())
+        .then(html => {
+          const script = document.createElement('div');
+          script.innerHTML = html;
+          document.body.appendChild(script);
+        })
+        .catch(error => console.error('Error loading scripts.html:', error));
     }
 
     includeHTML();
