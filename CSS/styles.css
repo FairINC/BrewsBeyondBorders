@@ -9,7 +9,7 @@
 
 .clickable-section {
     background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
-    border: 2px solid black; /* White border */
+    border: 2px solid black; /* black border */
     border-radius: 10px; /* Rounded corners */
     padding: 20px;
     cursor: pointer;
@@ -19,7 +19,7 @@
 
 .clickable-section h2 {
     margin: 0;
-    color: black;
+    color: white;
 }
 
 
