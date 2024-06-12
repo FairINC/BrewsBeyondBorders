@@ -175,6 +175,8 @@ header {
 }
 
 .landing-title {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background */
+  border: 2px solid black; /* black border */  
   font-family: 'Brett and Beer', sans-serif;
   font-size: 3rem;
   margin: 0;
