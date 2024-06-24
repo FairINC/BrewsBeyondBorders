@@ -1,79 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Include the head section -->
-  <script>
-    fetch('html/head.html')
-      .then(response => response.text())
-      .then(html => document.write(html))
-      .catch(error => console.error('Error loading head.html:', error));
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/path/to/loadSections.js" defer></script>
 </head>
 <body>
-  <header class="bg-dark white-text py-3 fixed-top" id="header">
-    <!-- Navigation will be loaded here -->
-  </header>
-
-  <div id="content">
-    <!-- Content sections will be loaded here -->
-  </div>
-
-  <footer class="bg-dark white-text text-center py-3" id="footer">
-    <!-- Footer will be loaded here -->
-  </footer>
-
-  <script>
-    function includeHTML() {
-      const header = document.getElementById('header');
-      const content = document.getElementById('content');
-      const footer = document.getElementById('footer');
-
-      fetch('html/nav.html')
-        .then(response => response.text())
-        .then(html => header.innerHTML = html)
-        .catch(error => console.error('Error loading nav.html:', error));
-
-      fetch('html/landing.html')
-        .then(response => response.text())
-        .then(html => content.innerHTML += html)
-        .catch(error => console.error('Error loading landing.html:', error));
-
-      fetch('html/about.html')
-        .then(response => response.text())
-        .then(html => content.innerHTML += html)
-        .catch(error => console.error('Error loading about.html:', error));
-
-      fetch('html/donation.html')
-        .then(response => response.text())
-        .then(html => content.innerHTML += html)
-        .catch(error => console.error('Error loading donation.html:', error));
-
-      fetch('html/newsletter.html')
-        .then(response => response.text())
-        .then(html => content.innerHTML += html)
-        .catch(error => console.error('Error loading newsletter.html:', error));
-
-      fetch('html/courses.html')
-        .then(response => response.text())
-        .then(html => content.innerHTML += html)
-        .catch(error => console.error('Error loading courses.html:', error));
-
-      fetch('html/footer.html')
-        .then(response => response.text())
-        .then(html => footer.innerHTML = html)
-        .catch(error => console.error('Error loading footer.html:', error));
-
-      fetch('html/scripts.html')
-        .then(response => response.text())
-        .then(html => {
-          const script = document.createElement('div');
-          script.innerHTML = html;
-          document.body.appendChild(script);
-        })
-        .catch(error => console.error('Error loading scripts.html:', error));
-    }
-
-    includeHTML();
-  </script>
+    <div id="head-section"></div>
+    <div id="navbar-section"></div>
+    <div id="carousel-section"></div>
+    <div id="about-section"></div>
+    <div id="causes-section"></div>
+    <div id="service-section"></div>
+    <div id="donate-section"></div>
+    <div id="team-section"></div>
+    <div id="testimonial-section"></div>
+    <div id="footer-section"></div>
+    <div id="backtotop-section"></div>
+    <div id="scripts-section"></div>
 </body>
 </html>
