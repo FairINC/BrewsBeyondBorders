@@ -252,24 +252,6 @@
 }
 
 
-/*** Donate ***/
-.donate {
-    background: rgba(0, 0, 0, 0.7); /* Adjusted to ensure transparency */
-}
-
-@media (max-width: 768px) {
-    .donate {
-        background: rgba(0, 0, 0, 0.7); /* Ensure transparency is maintained for smaller screens */
-    }
-}
-
-
-.btn-group .btn-light:hover,
-.btn-group input[type="radio"]:checked+label {
-    color: var(--primary);
-    border-color: var(--primary);
-}
-
 
 /*** Team ***/
 .team-item img {
@@ -459,3 +441,24 @@
 .footer .copyright a:hover {
     color: var(--primary);
 }
+
+
+/*** Donate ***/
+
+/* Ensure this is placed after other CSS definitions to take precedence */
+.donate {
+    background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency with higher specificity */
+}
+
+@media (max-width: 768px) {
+    .donate {
+        background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency on smaller screens */
+    }
+}
+
+.btn-group .btn-light:hover,
+.btn-group input[type="radio"]:checked+label {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
