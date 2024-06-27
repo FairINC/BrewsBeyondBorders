@@ -254,14 +254,15 @@
 
 /*** Donate ***/
 .donate {
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7); /* Adjusted to ensure transparency */
 }
 
 @media (max-width: 768px) {
     .donate {
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.7); /* Ensure transparency is maintained for smaller screens */
     }
 }
+
 
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked+label {
