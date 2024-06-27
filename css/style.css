@@ -1,6 +1,6 @@
 .img-responsive {
-    width: 150px; /* Default width for larger screens */
-    height: 150px; /* Default height for larger screens */
+    width: 170px; /* Default width for larger screens */
+    height: 170px; /* Default height for larger screens */
 }
 @media (max-width: 768px) {
     .img-responsive {
