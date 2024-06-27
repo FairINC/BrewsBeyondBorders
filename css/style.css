@@ -1,4 +1,9 @@
-
+@media (max-width: 768px) {
+    .img-responsive {
+        width: 100px; /* Adjust width for smaller screens */
+        height: 100px; /* Adjust height proportionally */
+    }
+}
 /********** Template CSS **********/
 :root {
     --primary: #FF6F0F;
