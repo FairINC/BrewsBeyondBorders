@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /cgi-bin/
+Disallow: /private/
+
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.brewsbeyondborders.org/sitemap.xml
