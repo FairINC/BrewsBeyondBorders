@@ -447,7 +447,14 @@
 
 /* Ensure this is placed after other CSS definitions to take precedence */
 .donate {
+    position: relative; /* Ensure positioning context */
     background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency with higher specificity */
+    z-index: 1; /* Ensure it's on top of the background image */
+}
+
+.donate-content {
+    position: relative; /* Ensure content is correctly layered */
+    z-index: 2; /* Make sure content is on top */
 }
 
 @media (max-width: 768px) {
@@ -455,6 +462,7 @@
         background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency on smaller screens */
     }
 }
+
 
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked+label {
