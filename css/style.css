@@ -251,6 +251,12 @@
     background: rgba(0, 29, 35, .8);
 }
 
+@media (max-width: 768px) {
+    .donate {
+        background: rgba(0, 29, 35, .8);
+    }
+}
+
 .btn-group .btn-light:hover,
 .btn-group input[type="radio"]:checked+label {
     color: var(--primary);
