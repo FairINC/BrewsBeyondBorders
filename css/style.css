@@ -1,3 +1,4 @@
+
 /********** Template CSS **********/
 :root {
     --primary: #FF6F0F;
@@ -10,7 +11,7 @@
     position: fixed;
     display: none;
     right: 30px;
-    bottom: 100px;
+    bottom: 50px;
     z-index: 99;
 }
 
@@ -266,21 +267,11 @@
 
 /*** Team ***/
 .team-item img {
-    position: absolute;
+    position: relative;
     top: 0;
-    left: 0;
-    width: 100%; /* Ensure the image covers its container */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 1; /* Ensure it's above other content */
+    transition: .5s;
 }
 
-@media (max-width: 768px) {
-    .team-item img {
-        width: auto; /* Adjust for smaller screens */
-        height: 50px; /* Set a fixed height */
-        object-fit: cover; /* Ensure the image covers its area */
-    }
-}
 .team-item:hover img {
     top: -30px;
 }
