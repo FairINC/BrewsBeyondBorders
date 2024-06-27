@@ -448,7 +448,7 @@
 /* Ensure this is placed after other CSS definitions to take precedence */
 .donate {
     position: relative; /* Ensure positioning context */
-    background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency with higher specificity */
+    background: rgba(0, 29, 35, .8) !important; /* Ensuring the background transparency with higher specificity */
     z-index: 1; /* Ensure it's on top of the background image */
 }
 
@@ -459,7 +459,7 @@
 
 @media (max-width: 768px) {
     .donate {
-        background: rgba(0, 0, 0, 0.7) !important; /* Ensuring the background transparency on smaller screens */
+        background: rgba(0, 29, 35, .8) !important; /* Ensuring the background transparency on smaller screens */
     }
 }
 
