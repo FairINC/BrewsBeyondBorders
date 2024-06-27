@@ -266,11 +266,21 @@
 
 /*** Team ***/
 .team-item img {
-    position: relative;
+    position: absolute;
     top: 0;
-    transition: .5s;
+    left: 0;
+    width: 100%; /* Ensure the image covers its container */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Ensure it's above other content */
 }
 
+@media (max-width: 768px) {
+    .team-item img {
+        width: auto; /* Adjust for smaller screens */
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Ensure the image covers its area */
+    }
+}
 .team-item:hover img {
     top: -30px;
 }
