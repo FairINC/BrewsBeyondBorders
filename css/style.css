@@ -1,12 +1,16 @@
 .img-responsive {
-    width: 170px; /* Default width for larger screens */
-    height: 170px; /* Default height for larger screens */
+   width: 170px; /* Default width for larger screens */ 
+   height: 170px; /* Default height for larger screens */
+ object-fit: cover;
+   object-position: top;
 }
 @media (max-width: 768px) {
     .img-responsive {
-        width: 100px; /* Adjust width for smaller screens */
-        height: 100px; /* Adjust height proportionally */
-    }
+  width: 100px; /* Adjust width for smaller screens */
+     height: 100px; /* Adjust height proportionally */
+     object-fit: cover;
+   object-position: top;
+}
 }
 /********** Template CSS **********/
 :root {
