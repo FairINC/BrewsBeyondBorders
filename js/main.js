@@ -81,3 +81,11 @@
     
 })(jQuery);
 
+window.onload = function() {
+    setInterval(function() {
+        var date = new Date();
+        var displayDate = date.toLocaleDateString();
+        var displayTime = date.toLocaleTimeString();
+        document.getElementById('datetime').innerHTML = displayDate + " " + displayTime;
+    }, 1000); // Update every second (1000 milliseconds)
+}
