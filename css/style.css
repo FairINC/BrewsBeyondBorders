@@ -1,3 +1,13 @@
+
+/********** Apply now CSS **********/
+.apply-now-banner {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .apply-now-banner:hover {
+        transform: scale(1.05);
+        filter: brightness(0.8);
+    }
+
 .img-hands {
    width: 170px; /* Default width for larger screens */ 
    height: 170px; /* Default height for larger screens */
