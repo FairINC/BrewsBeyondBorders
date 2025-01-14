@@ -1,5 +1,13 @@
 
-.mission {
+.apply {
+    background-color: #001d23; /* Dark blue background */
+    color: #FFFFFF; /* Light text for contrast */
+    padding: 20px; /* Space inside the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+    margin-top: 20px; /* Space above the container */
+}
+
 
 }
 /********** Apply now CSS **********/
