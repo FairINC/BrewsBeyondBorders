@@ -1,4 +1,10 @@
 
+.mission {
+    background-color: rgba(0, 29, 35, 0.6); /* 60% opacity */
+    color: #FFFFFF; /* White text for contrast */
+    padding: 20px;
+    border-radius: 10px; /* Optional: Rounded corners */
+}
 /********** Apply now CSS **********/
 .apply-now-banner {
         transition: transform 0.3s ease, filter 0.3s ease;
