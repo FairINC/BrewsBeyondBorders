@@ -1,9 +1,11 @@
 
 .mission {
-    background-color: rgba(0, 29, 35, 0.6); /* 60% opacity */
-    color: #FFFFFF; /* White text for contrast */
-    padding: 20px;
-    border-radius: 10px; /* Optional: Rounded corners */
+            background-color: rgba(0, 29, 35, 0.6); /* 60% transparent background */
+            color: #FFFFFF; /* White text for contrast */
+            padding: 20px 0; /* Top and bottom padding only */
+            text-align: center; /* Center-align text */
+            width: 100%; /* Full width */
+            margin: 0; /* Remove default margin */
 }
 /********** Apply now CSS **********/
 .apply-now-banner {
