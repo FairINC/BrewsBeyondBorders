@@ -3,6 +3,7 @@
             background-color: rgba(0, 29, 35, 0.6); /* 60% transparent background */
             color: #FFFFFF; /* White text for contrast */
             width: 100%; /* Full width */
+            border: none; /* Ensure no borders are applied */
 }
 /********** Apply now CSS **********/
 .apply-now-banner {
